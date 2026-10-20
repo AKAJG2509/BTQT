@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTQT - Danh sách bài tập</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --primary: #0d6efd;
+      --primary-dark: #0a4db8;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dfe7f1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef5ff, #f8fbff);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px 60px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--primary-dark);
+    }
+    .header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+      padding: 18px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f1ff;
+      color: var(--primary);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+    .card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      min-height: 52px;
+      line-height: 1.5;
+    }
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .card a:hover {
+      background: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>BTQT - Danh sách bài tập</h1>
+      <p>Trang tổng hợp các bài thực hành HTML, CSS và JavaScript của môn học.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="badge">Bài 3</div>
+        <h2>Vịnh Hạ Long</h2>
+        <p>Trang giới thiệu về vịnh Hạ Long, cảnh quan và điểm du lịch nổi tiếng.</p>
+        <a href="baitap-03.html">Mở bài 3</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 4</div>
+        <h2>Đà Nẵng</h2>
+        <p>Trang giới thiệu thành phố đáng sống với nhiều địa danh nổi tiếng.</p>
+        <a href="baitap-04.html">Mở bài 4</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 5</div>
+        <h2>Hoa tươi Nhân Ái</h2>
+        <p>Trang giới thiệu công ty với các thông tin liên hệ và danh sách dịch vụ.</p>
+        <a href="baitap-05.html">Mở bài 5</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 6</div>
+        <h2>Bảng món ăn</h2>
+        <p>Trang trình bày danh sách món ăn Hà Nội bằng bảng dữ liệu.</p>
+        <a href="baitap-06.html">Mở bài 6</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 7</div>
+        <h2>Khuyến mãi sản phẩm</h2>
+        <p>Trang quảng bá sản phẩm và nội dung khuyến mãi của doanh nghiệp.</p>
+        <a href="baitap-07.html">Mở bài 7</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 8</div>
+        <h2>Trang tin nhiều chuyên mục</h2>
+        <p>Trang tin tức với sidebar và các nhóm bài viết theo chủ đề.</p>
+        <a href="baitap-08.html">Mở bài 8</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 9</div>
+        <h2>Hồ sơ cá nhân</h2>
+        <p>Trang CV cá nhân và thông tin liên lạc cơ bản.</p>
+        <a href="baitap-09.html">Mở bài 9</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 10</div>
+        <h2>Form liên hệ</h2>
+        <p>Biểu mẫu liên hệ cho khách hàng hoặc sinh viên.</p>
+        <a href="baitap-10.html">Mở bài 10</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 11</div>
+        <h2>Thư viện ảnh</h2>
+        <p>Gallery ảnh các danh thắng Việt Nam sắp xếp đẹp mắt.</p>
+        <a href="baitap-11.html">Mở bài 11</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 12</div>
+        <h2>In lịch</h2>
+        <p>Trang lịch hiển thị và in theo ngày, tháng, năm nhập vào.</p>
+        <a href="baitap-12.html">Mở bài 12</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 13</div>
+        <h2>Đồng hồ số</h2>
+        <p>Đồng hồ số cập nhật thời gian thực và lời chào theo giờ.</p>
+        <a href="baitap-13.html">Mở bài 13</a>
+      </div>
+      <div class="card">
+        <div class="badge">Bài 14</div>
+        <h2>6 kỳ quan thiên nhiên Việt Nam</h2>
+        <p>Gallery các kỳ quan thiên nhiên Việt Nam với mô tả ngắn.</p>
+        <a href="baitap-14.html">Mở bài 14</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
